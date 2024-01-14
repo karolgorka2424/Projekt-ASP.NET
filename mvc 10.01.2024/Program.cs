@@ -45,6 +45,12 @@ namespace mvc_10._01._2024
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+            // make routing for other views
+            app.MapControllerRoute(
+                name: "comment",
+                pattern: "{controller=Comment}/{action=Index}/{id?}");
+
+
             app.MapRazorPages();
 
             app.Run();
